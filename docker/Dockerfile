@@ -15,6 +15,7 @@ RUN apk --no-cache add \
           unzip && \
     apk --no-cache add \
           curl \
+          bash \
           ca-certificates && \
           curl -L -o goldfish https://github.com/Caiyeon/goldfish/releases/download/$GOLDFISH_VERSION/goldfish-linux-amd64 && \
           chmod +x ./goldfish && \
