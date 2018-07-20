@@ -37,3 +37,17 @@ Note: this will NOT work in OSX due to network being inside the docker VM
 docker pull caiyeon/goldfish:<version>
 docker run -it --rm --network=host caiyeon/goldfish:<version>
 ```
+
+### Available Configuration Parameters
+
+| Parameter | Description | DEFAULT |
+|-----------|-------------|-------------|
+| `GOLDFISH_PORT` | Set port to goldfish. | 8000|
+| `TLS_DISABLE` | Disable TLS Goldfish | 1 | 
+| `VAULT_ADDRESS` | ADDRESS VAULT | http://vault:8200 | 
+| `TLS_SKIP_VERIFY` | tls skip verify vault connetion | 1 | 
+| `RUNTIME_CONFIG` | Runtime Config | secret/goldfish | 
+| `APPROLE_LOGIN` | Approle Login| auth/approle/login | 
+| `APPROLE_ID` | Approle ID | goldfish | 
+| `DISABLE_MLOCK` | Disable MLOCK | 1 | 
+
